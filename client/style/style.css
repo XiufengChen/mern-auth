@@ -1,0 +1,122 @@
+* {
+  font-family: "Open Sans"
+}
+
+.ut__header {
+  background: white;
+  width: 100%;
+  z-index:999;
+  margin: 0;
+}
+
+.ut-navbar {
+  background-color: #000;
+  color: #fff;
+  border-bottom-color: #fff;
+  border-bottom-width: 1px;
+  box-shadow: 0 2px 8px #888;
+}
+
+.navbar-nav li {
+  position: inherit;
+}
+
+#bootstrap-overrides .dropdown a {
+  color: white;
+  background: black;
+}
+
+#bootstrap-overrides .dropdown a:hover {
+  color: #0098c3;
+  background: black;
+}
+
+#bootstrap-overrides .dropdown a:active {
+  color: #0098c3;
+  background: black;
+}
+
+#bootstrap-overrides .dropdown a:focus {
+  color: #0098c3;
+  background: black;
+}
+
+#bootstrap-overrides .dropdown-menu {
+  width: 100%;
+  border-radius: 0;
+  padding-bottom: 20px;
+}
+
+#bootstrap-overrides .dropdown-menu ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+#bootstrap-overrides .dropdown-menu a{
+  text-decoration: none;
+  background: white;
+  color: black;
+}
+
+#bootstrap-overrides .dropdown-menu a:hover{
+  text-decoration: none;
+  background: white;
+  color: black;
+}
+
+#bootstrap-overrides h5 {
+  font-size: 13px;
+  color: #909090;
+}
+
+.topNavCol {
+  color: black;
+}
+
+.ut-home__content {
+  margin-bottom: 0px !important;
+  background: url(../../images/bg-water_drop-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: -20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-image-full-nav {
+  height: calc(100vh - 123px);
+}
+
+.ut-pages__content {
+  background: white;
+  margin-top: -20px;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 123px);
+}
+
+.ut__footer {
+  background-color: black;
+}
+
+.mailing-address {
+  margin: 4px 0;
+  padding: 20px 0;
+}
+
+.social-area {
+  margin: 4px 0;
+  padding: 15px 0;
+}
+
+.copyright {
+  color: #777777;
+  padding: 10px 15px;
+  margin: 15px 3px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/******************** pages **********************/
