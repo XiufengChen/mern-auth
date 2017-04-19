@@ -4,6 +4,8 @@ class About extends Component {
   render() {
     return (
       <div className="ut-pages__content">
+        <section className="about-banner">
+        </section>
         <div className="container">
           <div className="row">
             This is about page.

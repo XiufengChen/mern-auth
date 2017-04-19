@@ -83,6 +83,7 @@
   color: white;
   position: relative;
   overflow: hidden;
+  min-height: 600px;
 }
 
 .cover-image-full-nav {
@@ -95,6 +96,7 @@
   position: relative;
   overflow: hidden;
   height: calc(100vh - 123px);
+  min-height: 600px;
 }
 
 .ut__footer {
@@ -120,3 +122,19 @@
 }
 
 /******************** pages **********************/
+.about-banner {
+  background-image: url()
+}
+/******************** login **********************/
+.ut-login__wrapper {
+  position: relative;
+  top: 200px;
+}
+
+.ut-login__box {
+  background: white;
+}
+
+.ut-bg--light-dark {
+  background: #e6e6e6;
+}
