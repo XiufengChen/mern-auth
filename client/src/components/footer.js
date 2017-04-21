@@ -5,19 +5,27 @@ class Footer extends Component {
     return (
       <footer className="ut__footer">
         <div className="container">
-          <div className="mailing-address pull-left">
-            100 Institute st. Worcester, MA
-          </div>
-          <div className="social-area pull-right">
-            <a className="btn btn-social btn-facebook btn-simple" href="#">
-              <i className="fa fa-facebook-square"></i>
-            </a>
-            <a className="btn btn-social btn-twitter btn-simple" href="#">
-              <i className="fa fa-twitter"></i>
-            </a>
-          </div>
-          <div className="copyright">
-            © 2017 UNITTASK
+          <div className="row">
+            <div className="col-xs-4">
+              <div className="mailing-address pull-left">
+                100 Institute Road Worcester, MA 01609
+              </div>
+            </div>
+            <div className="col-xs-4">
+              <div className="copyright">
+                © 2017 UNITTASK
+              </div>
+            </div>
+            <div className="col-xs-4">
+              <div className="social-area pull-right">
+                <a href="#">
+                  <i className="fa fa-facebook-square" />
+                </a>
+                <a href="#">
+                  <i className="fa fa-twitter" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>

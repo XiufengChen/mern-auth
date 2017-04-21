@@ -8,7 +8,7 @@ class Header extends Component {
         <nav className="navbar navbar-static-top ut-navbar" role="navigation">
           <div className="container">
             <div className="navbar-header">
-              <Link className="navbar-brand" to='/'>UNITTASK</Link>
+              <Link className="navbar-brand ut-logo" to='/'>UNITTASK</Link>
             </div>
 
             <div className="collapse navbar-collapse">
@@ -102,7 +102,7 @@ class Header extends Component {
                 </li>
               </ul>
               <ul className="nav navbar-nav navbar-right">
-                <li><Link to='/signin'>SIGN IN</Link></li>
+                <li><Link id="ut-login__a" className="btn btn-default ut-login__btn" to='/signin'>SIGN IN</Link></li>
               </ul>
             </div>
 

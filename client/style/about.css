@@ -1,0 +1,109 @@
+.ut-about-us {
+
+}
+
+.about-banner {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.about-banner h1 {
+  font-size: 3.58em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.about-banner h3 {
+  padding: 0 280px 32px 280px;
+}
+
+#what-we-do {
+  background: #fff;
+}
+
+#what-we-do ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#what-we-do .about-banner__parallel {
+  margin-bottom: 120px;
+  color: #f0f0f0;
+}
+
+#what-we-do .about-banner__parallel li{
+  width: 50%;
+  float: left;
+  height: 640px;
+}
+
+#what-we-do .about-banner__parallel__image-step {
+  background-image: url(../../images/ab-step.jpg);
+  height: 400px;
+}
+
+#what-we-do .about-banner__parallel__image-block {
+  background-image: url(../../images/ab-block.jpg);
+  height: 400px;
+}
+
+#what-we-do .about-banner__parallel__intro {
+  background: #891818;
+  height: 240px;
+  padding: 60px;
+}
+
+#what-we-do .about-banner__parallel__intro h4 {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  font-size: 2.57em;
+  font-weight: bold;
+}
+
+#mission {
+  background: #3c3c3c;
+  color: white;
+}
+
+#mission .about-banner__vertical {
+  margin-bottom: 120px;
+}
+
+#team {
+  background: white;
+  color: black;
+}
+
+#team ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+  margin-bottom: 120px;
+}
+
+#team ul li {
+  float: left;
+  width: 33.3%;
+  padding: 5px 20px;
+  height: 300px;
+}
+
+.ut-about__photo {
+  height: 80%;
+  background: #e5e5e5;
+}
+
+.ut-about__title {
+  height: 20%;
+  background: #891818;
+  color: white;
+  padding: 5px;
+}
+.about-banner .ut-about__title h3 {
+  padding: 0px;
+  margin-top: 10px;
+}
