@@ -8,7 +8,7 @@ const router = require('./router');
 const mongoose = require('mongoose');
 
 // DB Setup
-mongoose.connect('mongodb://localhost:auth/auth0');
+mongoose.connect('mongodb://localhost:auth/auth');
 
 // App Setup, making express the way we want to work to
 app.use(morgan('combined'));           //logging for debugging
