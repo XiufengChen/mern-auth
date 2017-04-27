@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class About extends Component {
   render() {
@@ -18,7 +19,7 @@ class About extends Component {
                   </div>
                   <div className="about-banner__parallel__intro">
                     <h4>
-                      START UPS
+                      <Link to="/startups">START UPS</Link>
                     </h4>
                     <p>
                       Lorem Ipsum has been the industry
@@ -31,7 +32,7 @@ class About extends Component {
                   </div>
                   <div className="about-banner__parallel__intro">
                   <h4>
-                    STUDENTS
+                    <Link to="/students">STUDENTS</Link>
                   </h4>
                   <p>
                     Lorem Ipsum has been the industry

@@ -64,6 +64,11 @@
   font-weight: bold;
 }
 
+.about-banner__parallel__intro a {
+  text-decoration: none;
+  color: white;
+}
+
 #mission {
   background: #3c3c3c;
   color: white;
