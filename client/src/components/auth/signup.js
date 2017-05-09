@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 import * as actions from '../../actions';
 
-class Signin extends Component {
+class Signup extends Component {
   constructor(props) {
     super(props);
     this.state = {
       emailValue: '',
-      passwordValue: ''
+      passwordValue: '',
+      confirmPasswordValue: ''
     }
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    this.handleConfirmPasswordChange = this.handleConfirmPasswordChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
   }
 
@@ -23,20 +24,14 @@ class Signin extends Component {
     this.setState({passwordValue: e.target.value});
   }
 
+  handleConfirmPasswordChange(e) {
+    this.setState({confirmPasswordValue: e.target.value});
+  }
+
   handleFormSubmit(e) {
     e.preventDefault();
     // Need to do something to log user in
-    this.props.signinUser({ email: this.state.emailValue, password: this.state.passwordValue });
-  }
 
-  renderAlert() {
-    if (this.props.errorMessage) {
-      return (
-        <div className="alert alert-danger col-sm-4 col-sm-offset-4">
-          <strong>Oops!</strong> {this.props.errorMessage}
-        </div>
-      );
-    }
   }
 
   render() {
@@ -58,11 +53,15 @@ class Signin extends Component {
                     <input value={this.state.passwordValue} className="form-control" type="password" placeholder="Password" onChange={this.handlePasswordChange} />
                   </div>
                 </fieldset>
-                {this.renderAlert()}
+                <fieldset className="form-group">
+                  <label className="col-sm-2 col-sm-offset-2 control-label">Confirm Password:</label>
+                  <div className="col-sm-4">
+                    <input value={this.state.confirmPasswordValue} className="form-control" type="password" placeholder="Password" onChange={this.handleConfirmPasswordChange} />
+                  </div>
+                </fieldset>
                 <div className="form-group">
                   <div className="col-sm-offset-4 col-sm-10">
-                    <button action="submit" className="btn btn-default">Sign in</button>
-                      <Link id="ut-login__a" className="btn btn-default ut-login__btn" to='/signup' key={2}>SIGN UP</Link>
+                    <button action="submit" className="btn btn-default">Sign up</button>
                   </div>
                 </div>
               </form>
@@ -74,9 +73,4 @@ class Signin extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { errorMessage: state.auth.error };
-}
-
-// First params is object for configuration, second for Component
-export default connect(mapStateToProps, actions)(Signin)
+export default connect()(Signup);

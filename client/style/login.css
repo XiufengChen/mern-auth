@@ -5,37 +5,25 @@
 }
 
 .ut-login__btn {
-  color: #f0f0f0;
-  border: 2px solid #891818;
-  background-color: #891818;
+  color: white;
+  border-radius: 0;
+  background-color: #0098c3;
 }
 
 .ut-login__btn:hover {
-  color: #891818;
-  border: 2px solid #891818;
-  background-color: #f0f0f0;
+  color: white;
+  border-radius: 0;
+  background-color: #0098c3;
 }
 
 .ut-login__btn:active {
-  color: #891818;
-  border: 2px solid #891818;
-  background-color: #891818;
+  color: white;
+  border-radius: 0;
+  background-color: #0098c3;
 }
 
 .ut-login__btn:focus {
-  color: #891818;
-  border: 2px solid #891818;
-  background-color: #891818;
-}
-
-#ut-login__a {
-  margin-top: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-#ut-login__a:hover {
-  color: #891818;
-  border: 2px solid #891818;
-  background-color: #f0f0f0;
+  color: white;
+  border-radius: 0;
+  background-color: #0098c3;
 }

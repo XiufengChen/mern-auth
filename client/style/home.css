@@ -1,0 +1,66 @@
+.ut-home__content {
+  margin-bottom: 0px !important;
+  background: url(../../images/bg-hourglass.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.cover-image-full-nav {
+  height: calc(100vh - 112px);
+}
+
+.ut-home__slogan {
+  padding-top: 120px;
+}
+
+.ut-home h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3c3c3c;
+  text-shadow: 2px 2px 2px #858585;
+}
+.ut-home p {
+  font-size: 1.25em;
+  color: #3c3c3c;
+}
+
+.ut-home__signin {
+  padding: 5px 0;
+}
+
+.ut-pages__content {
+  background: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.rw-change {
+  height: 42px;
+}
+
+.rw-words .rw-item {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  animation: rotateWords 12s ease-in infinite 0s;
+}
+
+.rw-words .rw-item:nth-child(2) {
+  animation-delay: 6s;
+}
+
+@keyframes rotateWords {
+    0% { opacity: 0; }
+    1% { opacity: 0; }
+	  5% { opacity: 1; }
+    45% { opacity: 1; }
+	  49% { opacity: 0; }
+	  50% { opacity: 0; }
+    100% { opacity: 0; }
+}

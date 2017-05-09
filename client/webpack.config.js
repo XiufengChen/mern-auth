@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -8,25 +10,50 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
-      {
-        exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'es2015', 'stage-1']
-        }
-      },
+    rules: [
       {
         test: /\.css$/,
-        loaders: [
-          'style',
-          'css'
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: (loader) => [
+                require('autoprefixer')(),
+              ]
+            }
+          }
         ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: (loader) => [
+                require('autoprefixer')(),
+              ]
+            }
+          },
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules'
+    ],
+    extensions: [ '.js', '.jsx'],
   },
   devServer: {
     historyApiFallback: true,

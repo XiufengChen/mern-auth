@@ -17,6 +17,8 @@ import Students from './components/pages/students';
 import Startups from './components/pages/startups';
 import Sponsors from './components/pages/sponsors';
 import Signin from './components/auth/signin';
+import Signout from './components/auth/signout';
+import Signup from './components/auth/signup';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
@@ -32,6 +34,8 @@ ReactDOM.render(
         <Route path='startups' component={Startups} />
         <Route path='sponsors' component={Sponsors} />
         <Route path='signin' component={Signin} />
+        <Route path='signout' component={Signout} />
+        <Route path='signup' component={Signup} />
       </Route>
     </Router>
   </Provider>
