@@ -73,8 +73,9 @@ class Header extends Component {
                         <li className="col-sm-4">
                           <h5>STUDENTS</h5>
                           <ul>
-                            <li className="dropdown-menu-item"><Link to="/students#prospective">PROSPECTIVE</Link></li>
-                            <li className="dropdown-menu-item"><Link to="/students#university">UNIVERSITY CHAPTERS</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/students/involved">WHY GET INVOLVED</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/students/prospective">PROSPECTIVE</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/students/university-portal">UNIVERSITY CHAPTERS</Link></li>
                           </ul>
                         </li>
                       </ul>

@@ -5,7 +5,13 @@
 
 .ut-navbar {
   position: static;  // make dropdown-menu full width
+}
 
+.ut-navbar .ut-logo {
+  background: url(../../images/logo.png);
+  opacity: 0;
+  width: 100px;
+  height: 55px;
 }
 
 .navbar-dark {

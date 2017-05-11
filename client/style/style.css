@@ -3,6 +3,7 @@
 @import './header.css';
 @import './footer.css';
 @import './home.css';
+@import './students.css';
 
 * {
   font-family: "Open Sans"

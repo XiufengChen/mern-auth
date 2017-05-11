@@ -1,0 +1,32 @@
+.ly-section {
+
+}
+
+.section--dark {
+  background: #f5f5f5;
+}
+
+.ut-student__title {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.ut-student__title h1 {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.ut-student__desc {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.ut-student__apply {
+  padding-top: 0px;
+  padding-bottom: 80px;
+}
+
+.ut-student__form {
+  padding: 20px 0 20px 0;
+  background: #f5f5f5;
+}

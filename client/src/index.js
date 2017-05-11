@@ -14,6 +14,10 @@ import App from './components/app';
 import Home from './components/pages/home';
 import About from './components/pages/about';
 import Students from './components/pages/students';
+import StudentsInvolved from './components/students/Involved';
+import StudentsProspective from './components/students/Prospective';
+import UniversityPortal from './components/students/UniversityPortal';
+import UniversityForm from './components/students/UniversityForm';
 import Startups from './components/pages/startups';
 import Sponsors from './components/pages/sponsors';
 import Signin from './components/auth/signin';
@@ -30,7 +34,10 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <IndexRoute component={Home}/>
         <Route path='about' component={About} />
-        <Route path='students' component={Students} />
+        <Route path='students/involved' component={StudentsInvolved} />
+        <Route path='students/prospective' component={StudentsProspective} />
+        <Route path='students/university-portal' component={UniversityPortal} />
+        <Route path='students/university-form' component={UniversityForm} />
         <Route path='startups' component={Startups} />
         <Route path='sponsors' component={Sponsors} />
         <Route path='signin' component={Signin} />

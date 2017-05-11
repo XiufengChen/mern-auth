@@ -39,33 +39,31 @@ class Signup extends Component {
       <div className="ut-pages__content ut-bg--light-dark">
         <div className="ut-login__wrapper">
           <div className="container">
-            <div className="row">
-              <form className="form-horizontal ut-login__box" onSubmit={this.handleFormSubmit.bind(this)}>
-                <fieldset className="form-group">
-                  <label className="col-sm-2 col-sm-offset-2 control-label">Email:</label>
-                  <div className="col-sm-4">
-                    <input value={this.state.emailValue} className="form-control" placeholder="Email" onChange={this.handleEmailChange} />
-                  </div>
-                </fieldset>
-                <fieldset className="form-group">
-                  <label className="col-sm-2 col-sm-offset-2 control-label">Password:</label>
-                  <div className="col-sm-4">
-                    <input value={this.state.passwordValue} className="form-control" type="password" placeholder="Password" onChange={this.handlePasswordChange} />
-                  </div>
-                </fieldset>
-                <fieldset className="form-group">
-                  <label className="col-sm-2 col-sm-offset-2 control-label">Confirm Password:</label>
-                  <div className="col-sm-4">
-                    <input value={this.state.confirmPasswordValue} className="form-control" type="password" placeholder="Password" onChange={this.handleConfirmPasswordChange} />
-                  </div>
-                </fieldset>
-                <div className="form-group">
-                  <div className="col-sm-offset-4 col-sm-10">
-                    <button action="submit" className="btn btn-default">Sign up</button>
-                  </div>
+            <form OnSubmit={this.handleFormSubmit.bind(this)}>
+              <div className="form-group row">
+                <label htmlFor="inputEmail" className="col-sm-2 offset-sm-2 control-form-label">Email:</label>
+                <div className="col-sm-4">
+                  <input value={this.state.emailValue} id="inputEmail" className="form-control" placeholder="Email" onChange={this.handleEmailChange} />
                 </div>
-              </form>
-            </div>
+              </div>
+              <div className="form-group row">
+                <label htmlFor="inputPassword" className="col-sm-2 offset-sm-2 control-form-label">Password:</label>
+                <div className="col-sm-4">
+                  <input value={this.state.passwordValue} id="inputPassword" className="form-control" type="password" placeholder="Password" onChange={this.handlePasswordChange} />
+                </div>
+              </div>
+              <div className="form-group row">
+                <label htmlFor="inputPassword" className="col-sm-2 offset-sm-2 control-form-label">Confirm Password:</label>
+                <div className="col-sm-4">
+                  <input value={this.state.confirmPasswordValue} id="inputPassword" className="form-control" type="password" placeholder="Password" onChange={this.handleConfirmPasswordChange} />
+                </div>
+              </div>
+              <div className="form-group row">
+                <div className="offset-sm-4 col-sm-10">
+                  <button action="submit" className="btn btn-default ut-login__btn">Sign up</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
