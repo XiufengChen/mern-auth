@@ -29,7 +29,9 @@ class Header extends Component {
             <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <Link className="navbar-brand" to='/'>UNITTASK</Link>
+            <Link className="navbar-brand" to='/'>
+              <img src="../../images/logo.png" width="100" height="54" alt="UNITTASK" />
+            </Link>
             <div className="collapse navbar-collapse">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item dropdown nav-item--static">

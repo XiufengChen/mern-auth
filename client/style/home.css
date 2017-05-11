@@ -11,7 +11,7 @@
 }
 
 .cover-image-full-nav {
-  height: calc(100vh - 112px);
+  height: calc(100vh - 132px);
 }
 
 .ut-home__slogan {
@@ -41,7 +41,7 @@
 }
 
 .rw-change {
-  height: 42px;
+  height: 120px;
 }
 
 .rw-words .rw-item {
