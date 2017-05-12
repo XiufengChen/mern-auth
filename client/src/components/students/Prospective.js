@@ -53,15 +53,27 @@ class Prospective extends Component {
               <div className="col-md-8">
                 <form className="ut-student__form">
                   <div className="form-group row">
-                    <label htmlFor="inputEmail"className="col-sm-2 offset-sm-2 col-form-label">Email:</label>
+                    <label htmlFor="inputName"className="col-sm-2 offset-sm-2 col-form-label">Name:</label>
                     <div className="col-sm-4">
-                      <input id="inputEmail" className="form-control" placeholder="Email" />
+                      <input id="inputName" className="form-control" placeholder="Name" />
                     </div>
                   </div>
                   <div className="form-group row">
                     <label htmlFor="inputUniversity" className="col-sm-2 offset-sm-2 col-form-label">University</label>
                     <div className="col-sm-4">
                       <input id="inputUniversity" className="form-control" placeholder="University" />
+                    </div>
+                  </div>
+                  <div className="form-group row">
+                    <label htmlFor="inputDegree" className="col-sm-2 offset-sm-2 col-form-label">Degree</label>
+                    <div className="col-sm-4">
+                      <input id="inputDegree" className="form-control" placeholder="Degree" />
+                    </div>
+                  </div>
+                  <div className="form-group row">
+                    <label htmlFor="inputGraduateDate" className="col-sm-2 offset-sm-2 col-form-label">Graduate Date</label>
+                    <div className="col-sm-4">
+                      <input id="inputGraduateDate" className="form-control" placeholder="Graduate Date" />
                     </div>
                   </div>
                   <div className="form-group row">
