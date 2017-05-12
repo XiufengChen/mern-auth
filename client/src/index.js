@@ -13,7 +13,6 @@ import reduxThunk from 'redux-thunk';
 import App from './components/app';
 import Home from './components/pages/home';
 import About from './components/pages/about';
-import Students from './components/pages/students';
 import StudentsInvolved from './components/students/Involved';
 import StudentsProspective from './components/students/Prospective';
 import UniversityPortal from './components/students/UniversityPortal';
@@ -31,7 +30,7 @@ ReactDOM.render(
   // Provider can communicate with connected components
   <Provider store={createStoreWithMiddleware(reducers)}>
     <Router history={browserHistory}>
-      <Route path="/" component={App}>
+      <Route path='/'component={App}>
         <IndexRoute component={Home}/>
         <Route path='about' component={About} />
         <Route path='students/involved' component={StudentsInvolved} />

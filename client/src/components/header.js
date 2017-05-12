@@ -114,8 +114,9 @@ class Header extends Component {
                         <li className="col-sm-4">
                           <h5>SPONSORS</h5>
                           <ul>
+                            <li className="dropdown-menu-item"><Link to="/sponsors#why-unittask">WHY UNITTASK</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/sponsors#contribute">CONTRIBUTE</Link></li>
                             <li className="dropdown-menu-item"><Link to="/sponsors#donate">DONATE</Link></li>
-                            <li className="dropdown-menu-item"><Link to="/sponsors#why-get-involved">WHY GET INVOLVED</Link></li>
                           </ul>
                         </li>
                       </ul>
@@ -134,15 +135,8 @@ class Header extends Component {
                         <li className="col-sm-4">
                           <h5>MEDIA</h5>
                           <ul>
-                            <li className="dropdown-menu-item"><Link to="/about/#what-we-do">WHAT WE DO</Link></li>
-                            <li className="dropdown-menu-item"><Link to="/about/#mession">MISSION</Link></li>
-                            <li className="dropdown-menu-item"><Link to="/about/#team">TEAM</Link></li>
-                          </ul>
-                        </li>
-                        <li className="col-sm-4">
-                          <h5>CONTACT US</h5>
-                          <ul>
-                            <li className="dropdown-menu-item"><Link to="/about/#contact-us">CONTACT US</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/about/#overview">OVERVIEW</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/about/#article">ARTICLE</Link></li>
                           </ul>
                         </li>
                       </ul>
