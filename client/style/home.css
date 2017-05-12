@@ -40,6 +40,10 @@
   min-height: 600px;
 }
 
+.ut-pages__content--full  {
+  height: calc(100vh - 133px);
+}
+
 .rw-change {
   height: 120px;
 }

@@ -52,6 +52,12 @@ class Prospective extends Component {
             <div className="ut-student__apply row">
               <div className="col-md-8">
                 <form className="ut-student__form">
+                  <div className="row">
+                    <div className="col-sm-4 ml-5">
+                      <h4>Application form</h4>
+                    </div>
+                  </div>
+                  <br />
                   <div className="form-group row">
                     <label htmlFor="inputName"className="col-sm-2 offset-sm-2 col-form-label">Name:</label>
                     <div className="col-sm-4">

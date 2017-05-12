@@ -41,7 +41,7 @@ class Signin extends Component {
 
   render() {
     return (
-      <div className="ut-pages__content ut-bg--light-dark">
+      <div className="ut-pages__content ut-pages__content--full ut-bg--light-dark">
         <div className="ut-login__wrapper">
           <div className="container">
             <form onSubmit={this.handleFormSubmit.bind(this)}>
