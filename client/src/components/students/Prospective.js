@@ -53,7 +53,7 @@ class Prospective extends Component {
               <div className="col-md-8">
                 <form className="ut-student__form">
                   <div className="form-group row">
-                    <label htmlFor="inputName"className="col-sm-2 offset-sm-2 col-form-label">Name:</label>
+                    <label htmlFor="inputName" className="col-sm-2 offset-sm-2 col-form-label">Name:</label>
                     <div className="col-sm-4">
                       <input id="inputName" className="form-control" placeholder="Name" />
                     </div>

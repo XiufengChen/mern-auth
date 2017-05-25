@@ -94,8 +94,8 @@ class Header extends Component {
                         <li className="col-sm-4">
                           <h5>START UPS</h5>
                           <ul>
-                            <li className="dropdown-menu-item"><Link to="/startups#become-parnters">BECOME PARTNERS</Link></li>
-                            <li className="dropdown-menu-item"><Link to="/startups#view-students">VIEW STUDENTS</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/startups/become-partners">BECOME PARTNERS</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/startups/student-profiles">STUDENTS PROFILE</Link></li>
                           </ul>
                         </li>
                       </ul>

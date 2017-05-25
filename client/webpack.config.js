@@ -10,42 +10,26 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [
+    loaders: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: (loader) => [
-                require('autoprefixer')(),
-              ]
-            }
-          }
-        ]
+        loader: 'style-loader!css-loader'
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: (loader) => [
-                require('autoprefixer')(),
-              ]
-            }
-          },
-          'sass-loader'
-        ]
+        loader: 'style-loader!css-loader!sass-loader'
+      },
+      {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader'
       },
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-      }
+      },
+      { test: /\.gif$/, loader: "url-loader?mimetype=image/png" }, 
+      { test: /\.woff(2)?(\?v=[0-9].[0-9].[0-9])?$/, loader: "url-loader?mimetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, loader: "file-loader?name=[name].[ext]" }
     ]
   },
   resolve: {
