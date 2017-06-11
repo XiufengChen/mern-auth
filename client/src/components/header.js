@@ -30,7 +30,8 @@ class Header extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <Link className="navbar-brand" to='/'>
-              <img src="../../images/logo.png" width="100" height="54" alt="UNITTASK" />
+              {/*<img src="../../images/logo.png" width="100" height="54" alt="UNITTASK" />*/}
+              <div className="ut-logo" />
             </Link>
             <div className="collapse navbar-collapse">
               <ul className="navbar-nav mr-auto">
@@ -114,9 +115,8 @@ class Header extends Component {
                         <li className="col-sm-4">
                           <h5>SPONSORS</h5>
                           <ul>
-                            <li className="dropdown-menu-item"><Link to="/sponsors#why-unittask">WHY UNITTASK</Link></li>
-                            <li className="dropdown-menu-item"><Link to="/sponsors#contribute">CONTRIBUTE</Link></li>
-                            <li className="dropdown-menu-item"><Link to="/sponsors#donate">DONATE</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/sponsors/sponsors">WHY UNITTASK</Link></li>
+                            <li className="dropdown-menu-item"><Link to="/sponsors/sponsors">DONATE</Link></li>
                           </ul>
                         </li>
                       </ul>

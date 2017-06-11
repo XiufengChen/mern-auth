@@ -11,7 +11,7 @@ export default class UniversityPortal extends Component {
         <section className="ly-section section--dark">
           <div className="container">
             <div className="ut-student__title d-flex">
-              <h1>UNIVERSITY CHAPTER</h1>
+              <h1>University Chapter</h1>
             </div>
           </div>
         </section>
@@ -40,7 +40,6 @@ export default class UniversityPortal extends Component {
                    amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue
                    velit cursus nunc,
               </p>
-              <button className="btn btn-default ut-login__btn">JOIN US</button>
             </div>
           </div>
         </section>
@@ -48,7 +47,7 @@ export default class UniversityPortal extends Component {
           <div className="container">
             <div className="ut-student__sponsors">
               <div className="ut-sponsors__title d-flex">
-                <h1 className="mx-auto">SPONSORS</h1>
+                <h1 className="mx-auto">MEMBER UNIVERSITIES</h1>
               </div>
               <div className="row">
                 <div className="col ut-sponsors__card">

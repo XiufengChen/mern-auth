@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router';
-import * as actions from '../../actions';
 
-class UniversityForm extends Component {
+export default class BusinessApplicationForm extends Component {
   constructor(props) {
     super(props);
   }
@@ -12,15 +9,12 @@ class UniversityForm extends Component {
     return (
       <div className="container">
         <div className="ut-student__apply row">
-          <div className="col-md-10">
+          <div className="col-md-12">
             <form className="ut-student__form">
               <div className="form-group row">
-                <div className="offset-1 col-5">
-                  <input id="inputFirstName" className="form-control" />
+                <div className="offset-1 col ut-form__title">
+                  <h1>Student Application</h1>
                 </div>
-              </div>
-              <div className="row">
-                <label className="offset-1 col-5" htmlFor="inputFirstName">University</label>
               </div>
               <br />
               <div className="form-group row">
@@ -32,8 +26,8 @@ class UniversityForm extends Component {
                 </div>
               </div>
               <div className="row">
-                <label className="offset-1 col-5" htmlFor="inputFirstName">Primary Contact's First Name</label>
-                <label className="col-5" htmlFor="inputLastName">Primary Contact's Last Name</label>
+                <label className="offset-1 col-5" htmlFor="inputFirstName">First Name</label>
+                <label className="col-5" htmlFor="inputLastName">Last Name</label>
               </div>
               <br />
               <div className="form-group row">
@@ -45,8 +39,8 @@ class UniversityForm extends Component {
                 </div>
               </div>
               <div className="row">
-                <label htmlFor="inputStreetAddress" className="offset-1 col-5">Street Address</label>
-                <label htmlFor="inputAddressLine2" className="col-5">Address Line 2</label>
+                <label htmlFor="inputStreetAddress" className="offset-1 col-5">Address Line 1</label>
+                <label htmlFor="inputAddressLine2" className="col-5">Address Line 2 (Optional)</label>
               </div>
               <br />
               <div className="form-group row">
@@ -66,13 +60,9 @@ class UniversityForm extends Component {
                 <div className="offset-1 col-5">
                   <input id="inputZipCode" className="form-control" />
                 </div>
-                <div className="col-5">
-                  <input id="inputRefer" className="form-control" />
-                </div>
               </div>
               <div className="row">
                 <label htmlFor="inputZipCode" className="offset-1 col-5">Postal | Zip Code</label>
-                <label htmlFor="inputRefer" className="col-5">How are you get refered to us?</label>
               </div>
               <br />
               <div className="form-group row">
@@ -89,28 +79,43 @@ class UniversityForm extends Component {
               </div>
               <br />
               <div className="form-group row">
-                <div className="offset-1 col-10">
-                  <label htmlFor="textareaSituation">Explain why you think you are the right person to introduce Unittask Inc. to your school.</label>
-                  <textarea className="form-control" id="textareaSituation" rows="3"></textarea>
-                  <small class="form-text text-muted">Max Characters 150 words</small>
+                <div className="offset-1 col-5">
+                  <input id="inputUniversity" className="form-control" />
                 </div>
+                <div className="col-5">
+                  <input id="inputMajor" className="form-control" />
+                </div>
+              </div>
+              <div className="row">
+                <label htmlFor="inputUniversity" className="offset-1 col-5">University</label>
+                <label htmlFor="inputMajor" className="col-5">Major</label>
+              </div>
+              <br />
+              <div className="form-group row">
+                <div className="offset-1 col-5">
+                  <input id="inputTerm" className="form-control" />
+                </div>
+                <div className="col-5">
+                  <input id="inputDate" className="form-control" />
+                </div>
+              </div>
+              <div className="row">
+                <label htmlFor="inputTerm" className="offset-1 col-5">Current Term</label>
+                <label htmlFor="inputDate" className="col-5">Degree Completion Date</label>
               </div>
               <br />
               <div className="form-group row">
                 <div className="offset-1 col-10">
-                  <label htmlFor="attachment">Attachment(Resume) </label>
+                  <label htmlFor="attachment">Attachment (Resume)</label>
                   <input className="form-control" id="attachment" type="file" />
                 </div>
               </div>
               <br />
               <div className="form-group row">
-                <div className="row">
-                  <label htmlFor="inputPhone" className="offset-1 col-5">Phone Number</label>
-                  <label htmlFor="inputEmail" className="col-5">Email</label>
-                </div>
                 <div className="offset-1 col-10">
-                  <label htmlFor="attachment">Attachment(Resume) </label>
-                  <input className="form-control" id="attachment" type="file" />
+                  <label htmlFor="textareaProject">Tell us about a project that you've recently worked on. Provide as much detail as possible.</label>
+                  <textarea className="form-control" id="textareaProject" rows="3"></textarea>
+                  <small class="form-text text-muted">Max Characters 250 words</small>
                 </div>
               </div>
               <br />
@@ -126,10 +131,3 @@ class UniversityForm extends Component {
     );
   }
 }
-
-function mapStateToProps(state) {
-  return {  };
-}
-
-// First params is object for configuration, second for Component
-export default connect(mapStateToProps, actions)(UniversityForm);

@@ -12,7 +12,7 @@ export default class BecomeParnters extends Component {
         <section className="ly-section section--dark">
           <div className="container">
             <div className="ut-student__title d-flex">
-              <h1>BECOME PARTNERS</h1>
+              <h1>Become Parteners</h1>
             </div>
           </div>
         </section>
@@ -23,10 +23,26 @@ export default class BecomeParnters extends Component {
                 Description
               </h3>
               <p>
-                Gain valuable experience performing work assignments so that you remain relevant in the workplace while you complete your studies.
-                There is no need to fear of missing out because of your internship. We aren’t demanding of your schedule and understand that you
-                lead a busy life in your studies and other extracurricular activities. We only require 5-hours of your time weekly.
+                Gain valuable experience performing work assignments so that you
+                remain relevant in the workplace while you complete your studies.
+                There is no need to fear of missing out because of your internship.
+                We aren’t demanding of your schedule and understand that you lead
+                a busy life in your studies and other extracurricular activities.
+                We only require 5-hours of your time weekly.
               </p>
+            </div>
+          </div>
+        </section>
+        <section className="ly-section">
+          <div className="container">
+            <div className="row">
+              <img src="../../../images/diagram1.png" className="col" alt="UNITTASK" />
+            </div>
+          </div>
+        </section>
+        <section className="ly-section">
+          <div className="container">
+            <div className="ut-student__desc">
               <p>
                 Make significant contributions by executing unit-tasks for diverse business practice areas that are re-shaping and re-defining the
                 business landscape. An internship is the single most important credential for recent college graduates to have on their resume in

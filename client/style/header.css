@@ -7,11 +7,11 @@
   position: static;  // make dropdown-menu full width
 }
 
-.ut-navbar .ut-logo {
+.ut-logo {
   background: url(../../images/logo.png);
-  opacity: 0;
+  background-size: 100px 54px;
   width: 100px;
-  height: 55px;
+  height: 54px;
 }
 
 .navbar-dark {

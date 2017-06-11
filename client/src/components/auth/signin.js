@@ -32,7 +32,7 @@ class Signin extends Component {
   renderAlert() {
     if (this.props.errorMessage) {
       return (
-        <div className="alert alert-danger col-sm-4 col-sm-offset-4">
+        <div className="alert alert-danger col-4 offset-sm-4">
           <strong>Oops!</strong> {this.props.errorMessage}
         </div>
       );

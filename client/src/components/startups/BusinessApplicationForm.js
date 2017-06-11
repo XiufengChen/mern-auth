@@ -9,8 +9,14 @@ export default class BusinessApplicationForm extends Component {
     return (
       <div className="container">
         <div className="ut-student__apply row">
-          <div className="col-md-10">
+          <div className="col-md-12">
             <form className="ut-student__form">
+              <div className="form-group row">
+                <div className="offset-1 col ut-form__title">
+                  <h1>Business Application</h1>
+                </div>
+              </div>
+              <br />
               <div className="form-group row">
                 <div className="offset-1 col-5">
                   <input id="inputFirstName" className="form-control" />
@@ -93,6 +99,7 @@ export default class BusinessApplicationForm extends Component {
                 <div className="offset-1 col-10">
                   <label htmlFor="textareaSituation">Describe your situation and how you think we can help your achieve your objectives.</label>
                   <textarea className="form-control" id="textareaSituation" rows="3"></textarea>
+                  <small class="form-text text-muted">Max Characters 150 words</small>
                 </div>
               </div>
               <br />
@@ -183,11 +190,9 @@ export default class BusinessApplicationForm extends Component {
                   <input type="text" className="custom-control-input" />
                 </div>
               </div>
-
               <div className="form-group row">
-                <div className="offset-sm-4 col-sm-4">
+                <div className="offset-1 col-5">
                   <button action="submit" className="btn btn-default ut-login__btn">APPLY</button>
-
                 </div>
               </div>
             </form>

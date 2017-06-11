@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import * as actions from '../../actions';
+import StudentApplicationForm from './StudentApplicationForm';
 
 class Prospective extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Prospective extends Component {
         <section className="ly-section section--dark">
           <div className="container">
             <div className="ut-student__title d-flex">
-              <h1>STUDENT PROSPECTIVE</h1>
+              <h1>Student Prospective</h1>
               <button className="btn btn default ut-login__btn ml-auto">SUBMIT AN APPLICATION FORM</button>
             </div>
           </div>
@@ -48,44 +49,7 @@ class Prospective extends Component {
           </div>
         </section>
         <section className="ly-section" id="student-application">
-          <div className="container">
-            <div className="ut-student__apply row">
-              <div className="col-md-8">
-                <form className="ut-student__form">
-                  <div className="form-group row">
-                    <label htmlFor="inputName" className="col-sm-2 offset-sm-2 col-form-label">Name:</label>
-                    <div className="col-sm-4">
-                      <input id="inputName" className="form-control" placeholder="Name" />
-                    </div>
-                  </div>
-                  <div className="form-group row">
-                    <label htmlFor="inputUniversity" className="col-sm-2 offset-sm-2 col-form-label">University</label>
-                    <div className="col-sm-4">
-                      <input id="inputUniversity" className="form-control" placeholder="University" />
-                    </div>
-                  </div>
-                  <div className="form-group row">
-                    <label htmlFor="inputDegree" className="col-sm-2 offset-sm-2 col-form-label">Degree</label>
-                    <div className="col-sm-4">
-                      <input id="inputDegree" className="form-control" placeholder="Degree" />
-                    </div>
-                  </div>
-                  <div className="form-group row">
-                    <label htmlFor="inputGraduateDate" className="col-sm-2 offset-sm-2 col-form-label">Graduate Date</label>
-                    <div className="col-sm-4">
-                      <input id="inputGraduateDate" className="form-control" placeholder="Graduate Date" />
-                    </div>
-                  </div>
-                  <div className="form-group row">
-                    <div className="offset-sm-4 col-sm-4">
-                      <button action="submit" className="btn btn-default ut-login__btn">APPLY</button>
-                      <Link id="ut-login__a" className="btn btn-link ml-lg-4" to='/signup'></Link>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+          <StudentApplicationForm />
         </section>
       </div>
     );

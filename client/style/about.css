@@ -7,7 +7,6 @@
   padding: 0;
   border: 0;
   text-align: center;
-  padding-top: 50px;
 }
 
 .about-banner h1 {
@@ -20,43 +19,59 @@
   padding: 0 280px 32px 280px;
 }
 
-#what-we-do {
-  background: #fff;
+.ut-overview__title {
+  background: url(../../images/about-banner-1.jpg);
+  background-attachment: fixed;
+  color: white;
+  padding-top: 140px;
+  padding-bottom: 40px;
 }
 
-#what-we-do ul {
+.ut-overview__title h1 {
+  color: black;
+}
+
+.ut-overview__title h3 {
+  color: black;
+}
+
+.section--overview ul {
   list-style: none;
   padding-left: 0;
 }
 
-#what-we-do .about-banner__parallel {
+.ut-overview__content {
+  padding: 40px 0 20px 0;
+}
+
+.section--overview .about-banner__parallel {
   margin-bottom: 120px;
   color: #f0f0f0;
 }
 
-#what-we-do .about-banner__parallel li{
+.section--overview .about-banner__parallel li{
   width: 50%;
   float: left;
   height: 640px;
 }
 
-#what-we-do .about-banner__parallel__image-step {
+.section--overview .about-banner__parallel__image-step {
   background-image: url(../../images/ab-step.jpg);
   height: 400px;
 }
 
-#what-we-do .about-banner__parallel__image-block {
+.section--overview .about-banner__parallel__image-block {
   background-image: url(../../images/ab-block.jpg);
   height: 400px;
 }
 
-#what-we-do .about-banner__parallel__intro {
+.section--overview .about-banner__parallel__intro {
   background: #891818;
   height: 240px;
   padding: 60px;
 }
 
-#what-we-do .about-banner__parallel__intro h4 {
+.section--overview .about-banner__parallel__intro h4 {
   color: white;
   text-align: center;
   margin-top: 0;
@@ -69,13 +84,26 @@
   color: white;
 }
 
-#mission {
-  background: #3c3c3c;
+.ut-commit__title {
+  background: url(../../images/about-banner-2.jpg);
+  background-attachment: fixed;
   color: white;
+  padding-top: 140px;
+  padding-bottom: 40px;
 }
 
-#mission .about-banner__vertical {
-  margin-bottom: 120px;
+
+.ut-commit__content ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.ut-commit__content h3 {
+  padding: 20px 0 0 0;
+}
+
+.ut-commit__content p {
+  padding: 10px 0 0 0;
 }
 
 #team {

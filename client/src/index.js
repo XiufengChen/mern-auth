@@ -19,7 +19,7 @@ import UniversityPortal from './components/students/UniversityPortal';
 import UniversityForm from './components/students/UniversityForm';
 import BecomeParnters from './components/startups/BecomePartners';
 import StudentProfiles from './components/startups/StudentProfiles';
-import Sponsors from './components/pages/sponsors';
+import Sponsors from './components/sponsors/Sponsors';
 import Signin from './components/auth/signin';
 import Signout from './components/auth/signout';
 import Signup from './components/auth/signup';
@@ -42,7 +42,7 @@ ReactDOM.render(
         <Route path='students/university-form' component={UniversityForm} />
         <Route path='startups/become-partners' component={BecomeParnters} />
         <Route path='startups/student-profiles' component={StudentProfiles} />
-        <Route path='sponsors' component={Sponsors} />
+        <Route path='sponsors/sponsors' component={Sponsors} />
         <Route path='signin' component={Signin} />
         <Route path='signout' component={Signout} />
         <Route path='signup' component={Signup} />

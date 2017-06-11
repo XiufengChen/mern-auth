@@ -11,7 +11,7 @@ export default class StudentProfiles extends Component {
         <section className="ly-section section--dark">
           <div className="container">
             <div className="ut-student__title d-flex">
-              <h1>STUDENT PROFILES</h1>
+              <h1>Student Profiles</h1>
             </div>
           </div>
         </section>
