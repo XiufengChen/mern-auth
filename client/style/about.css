@@ -53,6 +53,7 @@
   width: 50%;
   float: left;
   height: 640px;
+  padding-left: 10px;
 }
 
 .section--overview .about-banner__parallel__image-step {
@@ -66,7 +67,7 @@
 }
 
 .section--overview .about-banner__parallel__intro {
-  background: #891818;
+  background: black;
   height: 240px;
   padding: 60px;
 }
@@ -89,7 +90,7 @@
   background-attachment: fixed;
   color: white;
   padding-top: 140px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 
@@ -106,23 +107,31 @@
   padding: 10px 0 0 0;
 }
 
-#team {
+.section--team {
   background: white;
   color: black;
 }
 
-#team ul {
+.section--team ul {
   list-style: none;
   margin-top: 20px;
   padding-left: 0;
   margin-bottom: 120px;
 }
 
-#team ul li {
+.section--team ul li {
   float: left;
   width: 33.3%;
   padding: 5px 20px;
   height: 300px;
+}
+
+.ut-team__title {
+  background: url(../../images/about-banner-3.jpg);
+  background-attachment: fixed;
+  color: white;
+  padding-top: 140px;
+  padding-bottom: 40px;
 }
 
 .ut-about__photo {

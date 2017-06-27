@@ -10,10 +10,14 @@ export default class Involved extends Component {
       <div className="ut-pages__content ut-bg--light-dark">
         <section className="ly-section section--dark">
           <div className="container">
-            <div className="ut-student__title d-flex">
-              <h1>Why Get Involved</h1>
+            <div className="row">
+              <div className="ut-student__title col offset-8">
+                <h1>Why Get Involved</h1>
+              </div>
             </div>
-            <p className="ut-student__subtitle">Gain valuable experience</p>
+            <div className="row">
+              <p className="ut-student__subtitle col-4 offset-9">Gain valuable experience</p>
+            </div>
           </div>
         </section>
         <section className="ly-section">

@@ -11,7 +11,7 @@ class About extends Component {
               <h1>WHAT WE DO</h1>
               <h3 className="about-banner__desc">
                 We help firms scale:
-                “We do, so our clients can plan”
+                We do, so our parteners can plan
               </h3>
             </div>
           </div>
@@ -37,7 +37,7 @@ class About extends Component {
                     </div>
                     <div className="about-banner__parallel__intro">
                       <h4>
-                        <Link to="/startups">START UPS</Link>
+                        <Link to="/startups">PARTNERS</Link>
                       </h4>
                       <p>
                         Lorem Ipsum has been the industry
@@ -66,11 +66,7 @@ class About extends Component {
         <section className="about-banner section--commit">
           <div className="ut-commit__title">
             <div className="container">
-              <h1>COMMITMENT</h1>
-              <h3 className="about-banner__desc">
-                Lorem Ipsum has been the industry
-                standard dummy text ever since the 1500
-              </h3>
+              <h1>OUR COMMITMENT</h1>
             </div>
           </div>
           <div className="ut-commit__content">
@@ -79,7 +75,7 @@ class About extends Component {
                 <div className="col-8 offset-2">
                   <ul>
                     <li>
-                      <h3>Our Commitment to Our Partners</h3>
+                      <h3>To Our Partners</h3>
                       <p>
                         As a non-profit-firm, our priority is to provide young firms
                         an opportunity to expand and reach their full potential. Young
@@ -94,7 +90,7 @@ class About extends Component {
                       </p>
                     </li>
                     <li>
-                      <h3>Our Commitment to Our People</h3>
+                      <h3>To Our People</h3>
                       <p>
                         We realizes the need for balance and diversity in learning. We
                         care about Our People’s work-life balance so we aren’t demanding
@@ -114,7 +110,12 @@ class About extends Component {
           </div>
           </div>
         </section>
-        <section id="team" className="about-banner">
+        <section className="about-banner section--team">
+          <div className="ut-team__title">
+            <div className="container">
+              <h1>TEAM</h1>
+            </div>
+          </div>
           <div className="container">
             <h1>TEAM</h1>
             <ul className="clearfix">

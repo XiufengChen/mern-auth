@@ -11,7 +11,7 @@
 }
 
 .ut-student__title {
-  padding-top: 200px;
+  padding-top: 160px;
   //padding-bottom: 80px;
   color: white;
 }
@@ -21,15 +21,15 @@
   margin-bottom: 0;
   padding: 9px;
   font-family: 'Lora', serif;
-  background: rgba(0,0,0, .6);
+  //background: rgba(0,0,0, .6);
 }
 .ut-student__subtitle {
   display: inline-block;
   margin-top: 20px;
   padding: 9px;
-  font-size: 14px;
+  font-size: 18px;
   color: white;
-  background: rgba(0,0,0, .6);
+  //background: rgba(0,0,0, .6);
 }
 
 .ut-student__desc {

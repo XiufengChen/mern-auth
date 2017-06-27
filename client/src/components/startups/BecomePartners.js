@@ -28,7 +28,7 @@ export default class BecomeParnters extends Component {
                 There is no need to fear of missing out because of your internship.
                 We aren’t demanding of your schedule and understand that you lead
                 a busy life in your studies and other extracurricular activities.
-                We only require 5-hours of your time weekly.
+                
               </p>
             </div>
           </div>
